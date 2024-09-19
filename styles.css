@@ -1,0 +1,110 @@
+/* Apply a background image to the body and ensure it covers the full viewport */
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://images.pexels.com/photos/2421196/pexels-photo-2421196.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center center fixed;
+    background-size: cover; /* Make sure the image covers the entire viewport */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    height: 100vh;            /* Full viewport height */
+    text-align: center;
+}
+
+/* Style the vending machine container */
+.vending-machine {
+    width: 420px; /* Slightly wider for better spacing */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* Style the items container */
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style each item */
+.item {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style the item images */
+.item img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the item buttons */
+.items button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Change button color on hover */
+.items button:hover {
+    background-color: #45a049;
+}
+
+/* Style the form inputs */
+form {
+    margin-top: 20px;
+}
+
+input {
+    width: calc(100% - 22px); /* Account for padding and border */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Style the generate bill button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Change color on button hover */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Style the selected items and total */
+h2, h3 {
+    margin: 20px 0 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
